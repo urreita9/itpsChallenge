@@ -48,7 +48,6 @@ const listActors = (movies) => {
 		ul.innerHTML += `<li>${actor}</li>`;
 	});
 
-	console.log(set.values());
 	body.appendChild(ul);
 };
 
