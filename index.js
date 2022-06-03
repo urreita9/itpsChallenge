@@ -78,9 +78,6 @@ function treesAreEqual(a, b) {
 	);
 }
 
-const a = { value: 1, right: { value: 2 } };
-const b = { value: 1, right: { value: 2 } };
-
 // a
 //           1
 // 			/ \
