@@ -21,6 +21,18 @@ const actorInMovies = (movies, actor) => {
 	}, {});
 };
 
+const movies = {
+	big: {
+		actors: ['Elizabeth Perkins', 'Robert Logi'],
+	},
+	'forrest gump': {
+		actors: ['Tom Hanks', 'Robin Wright', 'Cacona Gonxales', 'Gray Sinisie'],
+	},
+	'cast away': {
+		actors: ['Helen Hunt', 'Elizabeth Perkins', 'Paul Sanchez'],
+	},
+};
+
 //4
 const listActors = (movies) => {
 	const set = new Set();
@@ -36,6 +48,7 @@ const listActors = (movies) => {
 		ul.innerHTML += `<li>${actor}</li>`;
 	});
 
+	console.log(set.values());
 	body.appendChild(ul);
 };
 
@@ -67,7 +80,7 @@ const sum = sumCounters;
 const moviesWithActor = actorInMovies;
 
 //4
-function treesAreEqual(a, b) {
+const treesAreEqual = (a, b) => {
 	if (!a && !b) return true;
 	if (!a || !b) return false;
 
@@ -76,7 +89,10 @@ function treesAreEqual(a, b) {
 		treesAreEqual(a.left, b.left) &&
 		treesAreEqual(a.right, b.right)
 	);
-}
+};
+
+const a = { value: 1, right: { value: 2 } };
+const b = { value: 1, right: { value: 2 } };
 
 // a
 //           1
