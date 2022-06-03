@@ -21,18 +21,6 @@ const actorInMovies = (movies, actor) => {
 	}, {});
 };
 
-const movies = {
-	big: {
-		actors: ['Elizabeth Perkins', 'Robert Logi'],
-	},
-	'forrest gump': {
-		actors: ['Tom Hanks', 'Robin Wright', 'Cacona Gonxales', 'Gray Sinisie'],
-	},
-	'cast away': {
-		actors: ['Helen Hunt', 'Elizabeth Perkins', 'Paul Sanchez'],
-	},
-};
-
 //4
 const listActors = (movies) => {
 	const set = new Set();
